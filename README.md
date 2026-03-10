@@ -6,10 +6,10 @@ Also Nordic characters was displayed as two-byte graphical symbols on the ILI934
 ## Prerequisite
 Install Visual Studio Code\
 Add the pioarduino extension\
-Download he latest repositor:\
-https://github.com/SimZs/yoRadio-Fusion\
+Download he latest release from repository:\
+https://github.com/SimZs/yoRadio-Fusion \
 Uncomment the two lines regarding ILI934 and XPT2046\
-Perform a compilation in order to download the libraries
+Perform a compilation in order to download the libraries.
 
 ## ILI9341
 This section is only used for the 90 degree oriented Chinees variant
