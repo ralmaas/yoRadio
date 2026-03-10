@@ -16,7 +16,7 @@ This section is only used for the 90 degree oriented Chinese variant
 ### .pio/libdeps/yoradio-esp32s3n16r8/Adafruit ILI9341/Adafruit_ILI9341.h
 On line 46 make this update:\
 #define ILI9341_TFTWIDTH 320  ///< ILI9341 max TFT width was 240\
-#define ILI9341_TFTHEIGHT 240 ///< ILI9341 max TFT height was 320\
+#define ILI9341_TFTHEIGHT 240 ///< ILI9341 max TFT height was 320
 
 ### src/displays/displayILI9341.cpp
 On line 21:\
@@ -24,6 +24,7 @@ void DspCore::flip(){ setRotation(config.store.flipscreen?0:2); } // Was 1:3
 
 ## GFX
 Copy the file "fonts/glcdfont_EN.c" to directory ".pio/libdeps/yoradio-esp32s3n16r8/Adafruit GFX Library" and rename to glcdfont.c
+\The next section is added in order to handle the display of nordic characters on the ILI9341 display:
 ### .pio/libdeps/yoradio-esp32s3n16r8/Adafruit GFX Library/Adafruit_GFX.h:
 Line 253 (below bool_cp437...) add this:\
   bool _inLongChar;
