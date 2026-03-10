@@ -12,7 +12,7 @@ Uncomment the two lines regarding ILI934 and XPT2046\
 Perform a compilation in order to download the libraries.
 
 ## ILI9341
-This section is only used for the 90 degree oriented Chinees variant
+This section is only used for the 90 degree oriented Chinese variant
 ### .pio/libdeps/yoradio-esp32s3n16r8/Adafruit ILI9341/Adafruit_ILI9341.h
 On line 46 make this update:\
 #define ILI9341_TFTWIDTH 320  ///< ILI9341 max TFT width was 240\
@@ -23,7 +23,7 @@ On line 21:\
 void DspCore::flip(){ setRotation(config.store.flipscreen?0:2); } // Was 1:3
 
 ## GFX
-Copy the file fonts/glcdfont_EN.c to directory .pio/libdeps/yoradio-esp32s3n16r8/Adafruit GFX Library and rename to glcdfont.c
+Copy the file "fonts/glcdfont_EN.c" to directory ".pio/libdeps/yoradio-esp32s3n16r8/Adafruit GFX Library" and rename to glcdfont.c
 ### .pio/libdeps/yoradio-esp32s3n16r8/Adafruit GFX Library/Adafruit_GFX.h:
 Line 253 (below bool_cp437...) add this:\
   bool _inLongChar;
